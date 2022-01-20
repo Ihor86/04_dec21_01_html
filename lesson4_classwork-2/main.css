@@ -57,6 +57,18 @@
     justify-content: flex-end;
 }
 
+.js-end {
+    justify-content: flex-end;
+}
+
+.al-i-cen {
+    align-items: center;
+}
+
+.al-c-cen {
+    align-content: center;
+}
+
 .w30 {
      width: 30px;
 }
