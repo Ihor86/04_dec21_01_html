@@ -64,6 +64,9 @@ body {
 .w1020 {
     width: 1020px;
 }
+.w_auto {
+    width: auto;
+}
 .h150 {
     height: 150px;
 }
