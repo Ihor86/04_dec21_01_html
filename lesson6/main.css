@@ -3,34 +3,36 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --black-color: #000;
 }
-
-/*.header {*/
-/*    display: flex;*/
-/*    !*сам додав*!*/
-/*}*/
 
 .wrapper {
     max-width: 1150px;
     margin: 0 auto;
 }
+
+.header {
+    border-bottom: 1px solid #EAEEF2;
+}
+
+.header_grid {
+    display: flex;
+    position: relative;
+}
+
 .top_bar {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
 }
+
 .nav_menu {
-    display: flex;
-    /*justify-content: space-between;*/
-    align-items: center;
-    /*width: auto;*/
-    row-gap: 2%;
-    /*grid-column-gap: 22px;*/
+    column-gap: 22px;
 }
-.header_logo {
+
+.header_logo, .nav_menu {
     display: flex;
     align-items: center;
 }
@@ -41,8 +43,99 @@
     color: var(--black-color);
     text-decoration: none;
 }
+
 .nav_buttons {
     margin-left: 5px;
+    display: flex;
+    column-gap: 18px;
 }
 
+.nav_btn {
+    height: 52px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: shadow 0.35s;
+}
 
+.nav_btn:hover {
+    -webkit-box-shadow: 0 -1px 12px 13px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 -1px 12px 13px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 -1px 12px 13px rgba(34, 60, 80, 0.2);
+}
+
+.nav-btn__login {
+    width: 96px;
+    border: 1px solid var(--black-color);
+}
+
+.nav-btn__expert {
+    width: 189px;
+    background: var(--black-color);
+    color: white;
+    border: none;
+}
+
+.header_wrap__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 27px;
+    margin-bottom: 10px;
+}
+
+.header_content {
+    margin-top: 90px;
+}
+
+.header_content__title {
+    width: 491px;
+    height: 166px;
+    font-size: 77px;
+    line-height: 83px;
+    color: var(--black-color);
+}
+
+.text {
+    font-weight: normal;
+    width: 476px;
+    height: 92px;
+    font-size: 20px;
+    line-height: 31px;
+    color: var(--black-color);
+}
+
+.header_content h4 {
+    margin-top: 79px;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black-color);
+}
+
+.header_content__image {
+    width: 667px;
+    margin-top: 31px;
+}
+
+.header_content__image img {
+    width: 100%;
+}
+
+.header_button_bottom {
+    width: 159px;
+    height: 61px;
+    background: var(--black-color);
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    padding: 0 30px;
+    position: absolute;
+    bottom: -30.5px;
+    cursor: pointer;
+}
