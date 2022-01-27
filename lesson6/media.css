@@ -1,0 +1,96 @@
+@import url("css");
+
+@media screen and (max-width: 480px) {
+    /*body {*/
+    /*    !*background-color: red;*!*/
+    /*}*/
+    .header_content__image {
+        /*display: none;*/
+    }
+
+    .nav_menu {
+        /*display: none;*/
+        background: black;
+        /*color: white;*/
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        left: -100%;
+        height: calc(100vh - 100px);
+        z-index: 9999;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        transition: left .35s;
+    }
+
+    .nav_menu.active {
+        left: 0;
+        /*//з т. А (-100) в т. В.0 тепер, коли ми йому додаєм або забираємо клас active меню виїжджає, або ховається */
+    }
+
+    .nav_menu a {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .nav_buttons {
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-btn__login {
+        background: none;
+        border: 1px solid var(--grey-color);
+        color: #fff;
+        /*padding: 0;*/
+
+    }
+
+    .mobile_button {
+        display: flex;
+    }
+
+    .header_content__title {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .top_bar {
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+    }
+
+    .header_content {
+        width: 100%;
+        min-width: auto;
+        padding: 10px;
+    }
+
+    .header_wrap__content {
+        padding-bottom: 45px;
+    }
+
+    .header_content h4 {
+        margin-top: 40px;
+    }
+
+    .header_button_bottom {
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    /*.wrapper, .top_bar, .header_wrap__content, .header_content__title, .text {*/
+    /*    width: 100vw;*/
+    /*    height: auto;*/
+    /*}*/
+
+
+}
